@@ -29,8 +29,13 @@ function Calculate() {
   };
   return (
     <div className="calculator-ui">
+      <div className="header">
+        <h1>ONLINE CALCULATOR</h1>
+        <p>Write Once Get All Results</p>
+      </div>
       <div className="input-field nber-1">
         <input
+          className="input"
           type="text"
           value={firstnumber}
           onChange={(e) => setFirstNumber(e.target.value)}
@@ -39,6 +44,7 @@ function Calculate() {
       </div>
       <div className="input-field nber-2">
         <input
+          className="input"
           type="text"
           value={secondnumber}
           onChange={(e) => setSecondNumber(e.target.value)}
@@ -47,6 +53,7 @@ function Calculate() {
       </div>
       <div className="result">
         <input
+          className="input"
           type="text"
           value={result}
         />
